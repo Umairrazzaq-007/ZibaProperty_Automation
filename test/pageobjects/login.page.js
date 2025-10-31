@@ -1,41 +1,33 @@
-const { $ } = require('@wdio/globals')
-const Page = require('./page');
+import { $ } from "@wdio/globals";
 
-/**
- * sub page containing specific selectors and methods for a specific page
- */
-class LoginPage extends Page {
-    /**
-     * define selectors using getter methods
-     */
-    get inputUsername () {
-        return $('#username');
+class Login 
+{ 
+    get login_tab(){
+        return $('//android.widget.TextView[@text="Login"]');
+     }
+    get email_field(){
+        return $('//android.widget.EditText[@text="sample@gmail.com"]');
+    }
+    get password_field(){
+        return $('android=new UiSelector().className("android.widget.EditText").instance(1)');
+    }
+    get login_button(){
+        return $('//android.widget.TextView[@text="Continue to Ziba Property"]');
+    }
+    async tap_login_tab(){
+        await this.login_tab.waitForExist({ timeout: 10000 });
+        await this.login_tab.click();
+    }
+    async input_email()
+    {
+        await this.email_field.waitForExist({ timeout: 10000 });
+        await this.email_field.setValue("ar0@yopmail.com");
+    }
+    async input_password()
+    {
+        await this.password_field.waitForExist({ timeout: 10000 });
+        await this.password_field.setValue("12345678");
     }
 
-    get inputPassword () {
-        return $('#password');
-    }
-
-    get btnSubmit () {
-        return $('button[type="submit"]');
-    }
-
-    /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
-     */
-    async login (username, password) {
-        await this.inputUsername.setValue(username);
-        await this.inputPassword.setValue(password);
-        await this.btnSubmit.click();
-    }
-
-    /**
-     * overwrite specific options to adapt it to page object
-     */
-    open () {
-        return super.open('login');
-    }
 }
-
-module.exports = new LoginPage();
+export default new Login();

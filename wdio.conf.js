@@ -50,14 +50,27 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        // capabilities for local Appium web tests on an Android Emulator
-        platformName: 'Android',
-        browserName: 'Chrome',
-        'appium:deviceName': 'Android GoogleAPI Emulator',
-        'appium:platformVersion': '12.0',
-        'appium:automationName': 'UiAutomator2'
-    }],
+   capabilities: [
+    {
+      // capabilities for local Appium web tests on an Android Emulator
+      // 
+      platformName: "Android",
+      "appium:platformVersion": "11",
+      "appium:deviceName": "Galaxy S10",
+      "appium:appPackage": "com.millennium.homenet",
+      "appium:appActivity": ".MainActivity",
+      "appium:appWaitActivity": "com.millennium.homenet.MainActivity,.MainActivity",
+      "appium:appWaitForLaunch": true,
+      "appium:appWaitDuration": 20000,
+      "appium:automationName": "UiAutomator2",
+      "appium:noReset": true,
+      "appium:fullReset": false,
+      "appium:autoLaunch": true,
+      "appium:autoGrantPermissions": true,
+      "appium:ignoreHiddenApiPolicyError": true,
+      "appium:dontStopAppOnReset": true,
+    },
+  ],
 
     //
     // ===================
@@ -129,7 +142,15 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+  //  reporters: ['spec'],
+  reporters: [
+  'spec',
+  ['allure', {
+    outputDir: 'allure-results',
+    disableWebdriverStepsReporting: true,
+    disableWebdriverScreenshotsReporting: false,
+  }],
+],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -190,8 +211,16 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {object}         browser      instance of created browser/device session
      */
-    // before: function (capabilities, specs) {
-    // },
+    before: async function (capabilities, specs) {
+        try {
+            const platform = capabilities.platformName || capabilities['platformName'];
+            if (platform && String(platform).toLowerCase() === 'android') {
+                await driver.activateApp('com.millennium.homenet');
+                await driver.pause(2000);
+            }
+        } catch (err) {
+        }
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {string} commandName hook command name
