@@ -38,17 +38,17 @@ class ChangePassword {
 
     async input_oldpassword() {
         await this.oldpassword_field.waitForDisplayed({ timeout: 10000 });
-        await this.oldpassword_field.setValue("11111111");
+        await this.oldpassword_field.setValue("12345678");
     }
     
     async input_newpassword() {
         await this.newpassword_field.waitForDisplayed({ timeout: 10000 });
-        await this.newpassword_field.setValue("12345678");
+        await this.newpassword_field.setValue("111111111");
     }
     
     async input_retypepassword() {
         await this.retype_field.waitForDisplayed({ timeout: 10000 });
-        await this.retype_field.setValue("12345678");
+        await this.retype_field.setValue("111111111");
     }
 }
 
