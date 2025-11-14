@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","7710","should login with valid credentials","My Login application","Sat Nov 01 23:49:19 PKT 2025","passed","Sat Nov 01 23:49:27 PKT 2025","","","",""
+"","8997","should login with valid credentials","My Login application","Fri Nov 14 10:26:21 PKT 2025","passed","Fri Nov 14 10:26:30 PKT 2025","","","",""

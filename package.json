@@ -5,6 +5,7 @@
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
     "login": "wdio run ./wdio.conf.js --spec test.login.js",
+    "changepassword": "wdio run ./wdio.conf.js --spec test.changepassword.js",
     "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "keywords": [],

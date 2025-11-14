@@ -26,7 +26,7 @@ class Login
     async input_password()
     {
         await this.password_field.waitForExist({ timeout: 10000 });
-        await this.password_field.setValue("12345678");
+        await this.password_field.setValue("11111111");
     }
 
 }
