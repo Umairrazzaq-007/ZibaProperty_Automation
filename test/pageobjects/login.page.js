@@ -14,6 +14,10 @@ class Login
     get login_button(){
         return $('//android.widget.TextView[@text="Continue to Ziba Property"]');
     }
+    
+    get roles_button() {
+        return $('//android.widget.TextView[@text="Roles"]');
+    }
    
     async tap_login_tab(){
         await this.login_tab.waitForExist({ timeout: 10000 });
@@ -22,12 +26,17 @@ class Login
     async input_email()
     {
         await this.email_field.waitForExist({ timeout: 10000 });
-        await this.email_field.setValue("ar0@yopmail.com");
+        await this.email_field.setValue("newind@yopmail.com");
     }
     async input_password()
     {
         await this.password_field.waitForExist({ timeout: 10000 });
         await this.password_field.setValue("12345678");
+    }
+    
+    async click_roles() {
+        await this.roles_button.waitForDisplayed({ timeout: 10000 });
+        await this.roles_button.click();
     }
 
    
