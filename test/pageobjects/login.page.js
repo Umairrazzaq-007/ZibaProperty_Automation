@@ -38,7 +38,10 @@ class Login
         await this.roles_button.waitForDisplayed({ timeout: 10000 });
         await this.roles_button.click();
     }
-
+//  async click_roles() {
+//         await this.roles_button.waitForDisplayed({ timeout: 10000 });
+//         await this.roles_button.click();
+//     } from AR
    
       
 
