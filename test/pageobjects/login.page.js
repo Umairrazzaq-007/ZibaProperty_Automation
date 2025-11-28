@@ -3,6 +3,7 @@ import { $ } from "@wdio/globals";
 /* ========== SMART LOCATOR HELPER ========== */
 async function smartLocator(testIdSelector, fallbackSelector) {
     // Accept a single selector or an array of fallback selectors.
+    // Hamza
     const fallbacks = Array.isArray(fallbackSelector) ? fallbackSelector : [fallbackSelector];
     const selectors = [testIdSelector].concat(fallbacks).filter(Boolean);
     for (const sel of selectors) {
