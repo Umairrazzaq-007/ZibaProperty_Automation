@@ -57,12 +57,7 @@ exports.config = {
       // 
       platformName: "Android",
       "appium:platformVersion": "13",
-<<<<<<< HEAD
       "appium:deviceName": "vivo Y33s",
-=======
-      "appium:deviceName": "Redmi 10C",
-      "appium:udid": "7f06c35f",
->>>>>>> Abdul_Rehman
       "appium:appPackage": "com.millennium.homenet",
       "appium:appActivity": ".MainActivity",
       "appium:appWaitActivity": "com.millennium.homenet.MainActivity,.MainActivity",
@@ -75,11 +70,7 @@ exports.config = {
       "appium:autoGrantPermissions": true,
       "appium:ignoreHiddenApiPolicyError": true,
       "appium:dontStopAppOnReset": true,
-<<<<<<< HEAD
   
-=======
-      "appium:uiautomator2ServerInstallTimeout": 60000,
->>>>>>> Abdul_Rehman
     },
 //     {
 //   "platformName": "Android",
