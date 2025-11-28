@@ -55,8 +55,8 @@ exports.config = {
       // capabilities for local Appium web tests on an Android Emulator
       // 
       platformName: "Android",
-      "appium:platformVersion": "11",
-      "appium:deviceName": "Galaxy S10",
+      "appium:platformVersion": "13",
+      "appium:deviceName": "vivo Y33s",
       "appium:appPackage": "com.millennium.homenet",
       "appium:appActivity": ".MainActivity",
       "appium:appWaitActivity": "com.millennium.homenet.MainActivity,.MainActivity",
@@ -69,7 +69,19 @@ exports.config = {
       "appium:autoGrantPermissions": true,
       "appium:ignoreHiddenApiPolicyError": true,
       "appium:dontStopAppOnReset": true,
+  
     },
+//     {
+//   "platformName": "Android",
+//   "appium:platformVersion": "13",
+//   "appium:deviceName": "vivo Y33s",
+//   "appium:automationName": "UiAutomator2",
+//   "appium:appPackage": "com.millennium.homenet",
+//   "appium:appActivity": "com.millennium.homenet.MainActivity",
+//   "appium:noReset": true,
+//   "appium:autoGrantPermissions": true,
+//   "appium:ignoreHiddenApiPolicyError": true
+// },
   ],
 
     //
