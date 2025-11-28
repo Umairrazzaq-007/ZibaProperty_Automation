@@ -89,17 +89,20 @@ class Login {
     get link_login_via_otp() {
         return smartLocator('~auth_login_link_login_via_otp', '//android.widget.TextView[contains(@text,"OTP")]');
     }
-    
+
     get roles_button() {
         return $('//android.widget.TextView[@text="Roles"]');
     }
-   
-    async tap_login_tab(){
+
+    get linkSignup() {
+        return $('~auth_login_link_signup');
+    }
+
+    async tap_login_tab() {
         await this.login_tab.waitForExist({ timeout: 10000 });
         await this.login_tab.click();
     }
-    async input_email()
-    {
+    async input_email() {
         await this.email_field.waitForExist({ timeout: 10000 });
         await this.email_field.setValue("newind@yopmail.com");
     }
@@ -108,11 +111,16 @@ class Login {
         const btn = await this.btn_toggle_password;
         await btn.click();
     }
-    
+
     async click_roles() {
         await this.roles_button.waitForDisplayed({ timeout: 10000 });
         await this.roles_button.click();
     }
+    //  async click_roles() {
+    //         await this.roles_button.waitForDisplayed({ timeout: 10000 });
+    //         await this.roles_button.click();
+    //     } from AR
+
 
     async tapForgotPassword() {
         const link = await this.link_forgot_password;
