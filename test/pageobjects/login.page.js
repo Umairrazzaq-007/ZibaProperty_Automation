@@ -3,6 +3,7 @@ import { $ } from "@wdio/globals";
 /* ========== SMART LOCATOR HELPER ========== */
 async function smartLocator(testIdSelector, fallbackSelector) {
     // Accept a single selector or an array of fallback selectors.
+    // by Abdul Rehman
     const fallbacks = Array.isArray(fallbackSelector) ? fallbackSelector : [fallbackSelector];
     const selectors = [testIdSelector].concat(fallbacks).filter(Boolean);
     for (const sel of selectors) {
@@ -25,7 +26,7 @@ async function smartLocator(testIdSelector, fallbackSelector) {
     const last = selectors[selectors.length - 1];
     return $(last);
 }
-
+// by Abdul Rehman
 class Login {
 
     /* ========== ELEMENTS WITH FALLBACK LOCATORS ========== */
@@ -229,7 +230,7 @@ class Login {
                         popup = f;
                         break;
                     }
-                } catch (e) {}
+                } catch (e) { }
             }
             if (!popup) popup = await $("android=new UiSelector().className(\"android.widget.FrameLayout\")");
             if (await popup.isExisting()) {
