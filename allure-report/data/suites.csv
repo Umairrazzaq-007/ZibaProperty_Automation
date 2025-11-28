@@ -1,2 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","8997","should login with valid credentials","My Login application","Fri Nov 14 10:26:21 PKT 2025","passed","Fri Nov 14 10:26:30 PKT 2025","","","",""
+"","20751","should change password","Account password change ","Mon Nov 17 12:13:27 PKT 2025","passed","Mon Nov 17 12:13:48 PKT 2025","","","",""
+"","7445","should login with valid credentials","My Login application","Mon Nov 17 12:20:51 PKT 2025","passed","Mon Nov 17 12:20:58 PKT 2025","","","",""
+"","15156","should change password","Account password change","Fri Nov 14 12:41:04 PKT 2025","passed","Fri Nov 14 12:41:19 PKT 2025","","","",""
+"","15074","should login with valid credentials and navigate to Roles","My Login application","Mon Nov 17 12:38:18 PKT 2025","passed","Mon Nov 17 12:38:33 PKT 2025","","","",""

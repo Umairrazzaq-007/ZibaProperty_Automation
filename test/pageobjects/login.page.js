@@ -89,36 +89,29 @@ class Login {
     get link_login_via_otp() {
         return smartLocator('~auth_login_link_login_via_otp', '//android.widget.TextView[contains(@text,"OTP")]');
     }
-
-    /* ========== ACTIONS ========== */
-    async login(email, password) {
-        const emailField = await this.input_email;
-        await emailField.waitForDisplayed({ timeout: 10000 });
-        await emailField.setValue(email);
-
-        const passwordField = await this.input_password;
-        await passwordField.waitForDisplayed({ timeout: 10000 });
-        await passwordField.setValue(password);
-
-        const submitBtn = await this.btn_submit;
-        await submitBtn.waitForDisplayed({ timeout: 10000 });
-        await submitBtn.click();
+    
+    get roles_button() {
+        return $('//android.widget.TextView[@text="Roles"]');
     }
-
-    // compatibility: some tests call tap_login_tab()
-    async tap_login_tab() {
-        try {
-            const el = await this.header_login;
-            await el.waitForDisplayed({ timeout: 3000 });
-            await el.click();
-        } catch (e) {
-            // header not present - assume we're already on login screen
-        }
+   
+    async tap_login_tab(){
+        await this.login_tab.waitForExist({ timeout: 10000 });
+        await this.login_tab.click();
+    }
+    async input_email()
+    {
+        await this.email_field.waitForExist({ timeout: 10000 });
+        await this.email_field.setValue("newind@yopmail.com");
     }
 
     async togglePassword() {
         const btn = await this.btn_toggle_password;
         await btn.click();
+    }
+    
+    async click_roles() {
+        await this.roles_button.waitForDisplayed({ timeout: 10000 });
+        await this.roles_button.click();
     }
 
     async tapForgotPassword() {

@@ -25,6 +25,13 @@ class ChangePassword {
     get changepass_button() {
         return $('//android.widget.TextView[@text="Change"]');
     }
+    get confirmation_button() {
+        return $('//android.widget.Button[@resource-id="android:id/button1"]');
+    }
+    get logout() {
+        return $('//android.view.ViewGroup[@content-desc=", Logout"]');
+    }
+
 
     async tap_profile() {
         await this.profile_tab.waitForDisplayed({ timeout: 10000 });
@@ -43,12 +50,12 @@ class ChangePassword {
     
     async input_newpassword() {
         await this.newpassword_field.waitForDisplayed({ timeout: 10000 });
-        await this.newpassword_field.setValue("111111111");
+        await this.newpassword_field.setValue("12345678");
     }
     
     async input_retypepassword() {
         await this.retype_field.waitForDisplayed({ timeout: 10000 });
-        await this.retype_field.setValue("111111111");
+        await this.retype_field.setValue("12345678");
     }
 }
 
