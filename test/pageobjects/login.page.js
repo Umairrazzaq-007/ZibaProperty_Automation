@@ -2,6 +2,7 @@ import { $ } from "@wdio/globals";
 
 class Login {
     get login_tab() {
+        // Login Tab confirmation
         return $('//android.widget.TextView[@text="Login"]');
     }
     get email_field() {
