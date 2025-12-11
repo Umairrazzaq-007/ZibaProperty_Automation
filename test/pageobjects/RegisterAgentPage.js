@@ -44,32 +44,88 @@ import { $ } from '@wdio/globals';
 
 // export default new RegisterAgentPage();
 
-class RegisterAgentPagege {
+class RegisterAgentPage {
     // Locators using testIDs
-    get roleDropdownClick() { return $('//android.view.ViewGroup[@content-desc=", Select a Role*, "]') }
+    get roleDropdownClick() {
+        return $('//android.widget.TextView[@text="Select a Role*"]');
+    }
     // get roleDropdown() { return $("~auth_register_agent_dropdown_role"); }
-    get nameInput() { return $('//android.widget.TextView[@content-desc="Name"]') }
-    get emailInput() { return $('//android.widget.Button[@content-desc="Email"]'); }
-    get phoneInput() { return $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]'); }
-    get passwordInput() { return $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]') }
-    get signupBtn() { return $('//android.widget.Button[@content-desc="Unknown"]/android.widget.TextView') }
+    get nameInput() { return $('~auth_register_input_name'); }
+
+    get emailInput() { return $('~auth_register_input_email'); }
+    get passwordInput() { return $('~auth_register_btn_inputiconv2'); }
+
+    // Phone locator needs to handle both placeholder and entered value (due to noReset: true)
+    get phoneInput() { return $('//android.widget.EditText[contains(@text, "XXXX") or contains(@text, "03")]'); }
+    get signupBtn() { return $('~ui_button_default_btn_onpress'); }
 
 
     // Function to select Agent role from dropdown
     async selectAgentRole() {
-        await this.roleDropdownClick.click();
-        // Try using the accessibility ID first
-        const agentOption = await $('(//android.widget.Button[@content-desc="Unknown"])[2]');
-        await agentOption.click();
+        // Try clicking the dropdown
+        try {
+            const dropdown = await this.roleDropdownClick;
+            await dropdown.waitForDisplayed({ timeout: 10000 });
+            await dropdown.click();
+        } catch (e) {
+            // Fallback to parent view group if textview not found/clickable
+            const dropdownParent = await $('//android.view.ViewGroup[contains(@content-desc, "Select a Role")]');
+            await dropdownParent.waitForDisplayed({ timeout: 5000 });
+            await dropdownParent.click();
+        }
+
+        await driver.pause(2000); // Wait for dropdown to open
+
+        // Try to find the Agent option by text first (more reliable)
+        try {
+            // Look for text 'Agent' or 'Real Estate Agent'
+            const agentText = await $('//android.widget.TextView[contains(@text, "Agent") or contains(@text, "Real Estate")]');
+            if (await agentText.isDisplayed()) {
+                await agentText.click();
+                return;
+            }
+        } catch (e) {
+            console.log('Could not find Agent option by text');
+        }
+
+        // Fallback to the user's selector or other heuristics
+        try {
+            // The user mentioned: (//android.widget.Button[@content-desc="Unknown"])[2]
+            // We'll try to list all options and click the 2nd one if it seems right
+            const options = await $$('//android.widget.Button[@content-desc="Unknown"]');
+            if (options.length >= 2) {
+                await options[1].click();
+            } else {
+                // Try finding any element with text Agent
+                const agentAny = await $('//*[contains(@text, "Agent")]');
+                await agentAny.click();
+            }
+        } catch (e) {
+            console.log('Failed to select Agent role. Capturing page source...');
+            const source = await driver.getPageSource();
+            console.log(source);
+            throw e;
+        }
     }
 
 
     // Fill all signup fields
     async fillForm(name, email, phone, password) {
+        console.log('Starting to fill form...');
+
+        await this.nameInput.waitForDisplayed({ timeout: 10000 });
         await this.nameInput.setValue(name);
+
+        await this.emailInput.waitForDisplayed({ timeout: 5000 });
         await this.emailInput.setValue(email);
+
+        await this.phoneInput.waitForDisplayed({ timeout: 5000 });
         await this.phoneInput.setValue(phone);
+
+        await this.passwordInput.waitForDisplayed({ timeout: 5000 });
         await this.passwordInput.setValue(password);
+
+        console.log('Form filled successfully');
     }
 
 
@@ -80,4 +136,4 @@ class RegisterAgentPagege {
 }
 
 
-export default new RegisterAgentPagege();
+export default new RegisterAgentPage();

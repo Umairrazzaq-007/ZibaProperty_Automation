@@ -1,0 +1,1374 @@
+
+> zibaproperty_automation@1.0.0 register
+> ./node_modules/.bin/wdio run ./wdio.conf.js --spec test/specs/test.registerAgent.js
+
+
+Execution of 1 workers started at 2025-11-28T12:17:46.326Z
+
+2025-11-28T12:17:46.350Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-11-28T12:17:46.366Z INFO @wdio/appium-service: Will spawn Appium process: node /Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium/index.js --base-path / --port 59062
+2025-11-28T12:17:49.617Z INFO @wdio/appium-service: Appium started with ID: 22589
+2025-11-28T12:17:49.618Z INFO @wdio/appium-service: Appium logs written to stdout
+2025-11-28T12:17:49.620Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-11-28T12:17:49.620Z INFO @wdio/xvfb: XvfbManager.init() called
+2025-11-28T12:17:49.620Z INFO @wdio/xvfb: Xvfb not needed on current platform
+2025-11-28T12:17:49.622Z INFO @wdio/local-runner: Start worker 0-0 with arg: run ./wdio.conf.js --spec test/specs/test.registerAgent.js
+2025-11-28T12:17:49.637Z INFO @wdio/xvfb:ProcessFactory: xvfb-run not found, falling back to regular fork
+2025-11-28T12:17:49.637Z INFO @wdio/xvfb:ProcessFactory: ProcessFactory: shouldRun=false, isAvailable=false
+2025-11-28T12:17:49.637Z INFO @wdio/xvfb:ProcessFactory: Creating worker process with regular fork
+[0-0] 2025-11-28T12:17:51.019Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in Android(13) on Android - file:///test/specs/test.registerAgent.js
+[0-0] 2025-11-28T12:17:51.576Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2025-11-28T12:17:51.577Z INFO @wdio/utils: Connecting to existing driver at http://127.0.0.1:59062/
+[0-0] 2025-11-28T12:17:51.594Z INFO webdriver: [POST] http://127.0.0.1:59062/session
+[0-0] 2025-11-28T12:17:55.950Z INFO webdriver: COMMAND activateApp("com.millennium.homenet")
+[0-0] 2025-11-28T12:17:55.951Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/appium/device/activate_app
+[0-0] 2025-11-28T12:17:55.951Z INFO webdriver: DATA { appId: 'com.millennium.homenet' }
+[0-0] 2025-11-28T12:17:56.165Z INFO webdriver: RESULT null
+[0-0] Login tab not found or already on login screen
+[0-0] 2025-11-28T12:18:00.183Z INFO webdriver: COMMAND findElement("accessibility id", "auth_login_link_signup")
+[0-0] 2025-11-28T12:18:00.184Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:00.184Z INFO webdriver: DATA { using: 'accessibility id', value: 'auth_login_link_signup' }
+[0-0] 2025-11-28T12:18:00.419Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:00.431Z INFO webdriver: COMMAND findElements("accessibility id", "auth_login_link_signup")
+[0-0] 2025-11-28T12:18:00.432Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/elements
+[0-0] 2025-11-28T12:18:00.432Z INFO webdriver: DATA { using: 'accessibility id', value: 'auth_login_link_signup' }
+[0-0] 2025-11-28T12:18:00.655Z INFO webdriver: RESULT []
+[0-0] 2025-11-28T12:18:00.659Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:00.659Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:00.660Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:01.421Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:01.427Z INFO webdriver: COMMAND findElements("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:01.427Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/elements
+[0-0] 2025-11-28T12:18:01.427Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:01.869Z INFO webdriver: RESULT []
+[0-0] 2025-11-28T12:18:01.871Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:01.871Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:01.871Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:02.258Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:02.263Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:02.263Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:02.263Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:02.697Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:02.702Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:02.703Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:02.703Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:03.162Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:03.166Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:03.166Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:03.166Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:03.478Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:03.483Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:03.484Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:03.484Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:03.785Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:03.789Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:03.789Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:03.789Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:04.117Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:04.122Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:04.122Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:04.122Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:04.530Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:04.536Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:04.536Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:04.537Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:04.865Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:04.868Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:04.868Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:04.868Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:05.258Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:05.262Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:05.262Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:05.262Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:05.647Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:05.654Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:05.654Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:05.654Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:05.971Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:05.975Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:05.975Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:05.975Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:06.317Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:06.321Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:06.322Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:06.322Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:06.736Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:06.740Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:06.741Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:06.741Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:07.084Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:07.088Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:07.088Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:07.088Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:07.368Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:07.372Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:07.372Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:07.372Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:07.703Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:07.708Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:07.708Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:07.708Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:08.012Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:08.016Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:08.017Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:08.017Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:08.325Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:08.329Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:08.330Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:08.330Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:08.553Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:08.557Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:08.558Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:08.558Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:08.728Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:08.731Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:08.731Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:08.731Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:08.978Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:08.982Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:08.982Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:08.982Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:09.169Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:09.172Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:09.173Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:09.173Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:09.398Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:09.402Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:09.402Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:09.402Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:09.620Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:09.625Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:09.626Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:09.626Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:09.856Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:09.859Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:09.860Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:09.860Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:10.117Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:10.120Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:10.121Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:10.121Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:10.427Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:10.432Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:10.432Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:10.432Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:10.672Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:10.676Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:10.676Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:10.676Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:11.030Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:11.034Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:11.034Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:11.034Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:11.366Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:11.368Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:11.369Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:11.369Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:11.748Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:11.752Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:11.752Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:11.752Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] 2025-11-28T12:18:12.105Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:12.107Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Sign up"]")
+[0-0] 2025-11-28T12:18:12.108Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:12.108Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.TextView[@text="Sign up"]' }
+[0-0] Sign up link not found, might already be on signup screen
+[0-0] 2025-11-28T12:18:12.262Z INFO webdriver: COMMAND getPageSource()
+[0-0] 2025-11-28T12:18:12.263Z INFO webdriver: [GET] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/source
+[0-0] 2025-11-28T12:18:12.473Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:12.932Z INFO webdriver: RESULT <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+[0-0] <hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2281">
+[0-0]   <android.widget.FrameLayout index="0" package="com.millennium.homenet" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2400]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="0" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]     <android.widget.LinearLayout index="0" package="com.millennium.homenet" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]       <android.widget.FrameLayout index="0" package="com.millennium.homenet" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]         <android.widget.LinearLayout index="0" package="com.millennium.homenet" class="android.widget.LinearLayout" text="" resource-id="com.millennium.homenet:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]           <android.widget.FrameLayout index="0" package="com.millennium.homenet" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]             <android.widget.FrameLayout index="0" package="com.millennium.homenet" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]               <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                 <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                   <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                   <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                     <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                     <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                       <android.widget.ScrollView index="0" package="com.millennium.homenet" class="android.widget.ScrollView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                         <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                           <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                             <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                               <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                 <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                   <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                     <android.widget.FrameLayout index="0" package="com.millennium.homenet" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                       <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                         <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                           <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                             <android.widget.ScrollView index="0" package="com.millennium.homenet" class="android.widget.ScrollView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                               <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                 <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                   <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,80][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                   <android.widget.ScrollView index="2" package="com.millennium.homenet" class="android.widget.ScrollView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,80][1080,2298]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="3" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                     <android.view.ViewGroup index="0" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,80][1080,2298]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                       <android.view.View index="0" package="com.millennium.homenet" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[477,185][603,311]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="1" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[484,213][595,283]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="2" package="com.millennium.homenet" class="android.widget.TextView" text="Create Professional Account" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[177,376][903,453]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="3" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="3" package="com.millennium.homenet" class="android.view.ViewGroup" text="" content-desc=", Select a Role*, " checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,519][1038,630]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="4" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                         <android.widget.TextView index="0" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[62,554][102,595]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                         <android.widget.TextView index="1" package="com.millennium.homenet" class="android.widget.TextView" text="Select a Role*" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[122,543][401,606]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                         <android.widget.TextView index="2" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[963,565][995,583]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="3" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       </android.view.ViewGroup>
+[0-0]                                                       <android.view.ViewGroup index="4" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,651][1038,761]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="5" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="5" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[67,688][97,724]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="6" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="6" package="com.millennium.homenet" class="android.widget.TextView" text="Name*" content-desc="Name" resource-id="register-name-input" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[122,679][1036,733]" displayed="true" hint="Name*" a11y-important="true" screen-reader-focusable="false" input-type="16385" drawing-order="7" showing-hint="true" text-entry-key="false" multiline="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" max-text-length="5000" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="7" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,782][1038,892]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="8" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="8" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[61,822][102,852]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="9" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.Button index="9" package="com.millennium.homenet" class="android.widget.Button" text="sample@gmail.com*" content-desc="Email" resource-id="register-email-input" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[122,810][1036,864]" displayed="true" hint="sample@gmail.com*" a11y-important="true" screen-reader-focusable="false" input-type="33" drawing-order="10" showing-hint="true" text-entry-key="false" multiline="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" max-text-length="5000" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="10" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,913][1038,1023]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="11" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="11" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,913][1038,1023]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="12" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="12" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[43,939][1037,998]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="13" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="13" package="com.millennium.homenet" class="android.view.ViewGroup" text="" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[43,939][259,998]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="14" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                         <android.widget.ImageView index="0" package="com.millennium.homenet" class="android.widget.ImageView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[89,942][155,994]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                         <android.widget.ImageView index="1" package="com.millennium.homenet" class="android.widget.ImageView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[187,950][218,987]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       </android.view.ViewGroup>
+[0-0]                                                       <android.view.ViewGroup index="14" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[258,939][1036,998]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="15" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="15" package="com.millennium.homenet" class="android.widget.TextView" text="+92" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[258,939][325,998]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="16" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.EditText index="16" package="com.millennium.homenet" class="android.widget.EditText" text="XXXX XXXXXXX" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[351,939][995,998]" displayed="true" hint="XXXX XXXXXXX" a11y-important="true" screen-reader-focusable="false" input-type="16386" drawing-order="17" showing-hint="true" text-entry-key="false" multiline="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" max-text-length="5000" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="17" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,1044][1038,1155]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="18" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="18" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[74,1077][107,1120]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="19" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.EditText index="19" package="com.millennium.homenet" class="android.widget.EditText" text="Password*" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[139,1068][869,1131]" displayed="true" hint="Password*" a11y-important="true" screen-reader-focusable="false" input-type="1" drawing-order="20" showing-hint="true" text-entry-key="false" multiline="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" max-text-length="5000" content-invalid="false" />
+[0-0]                                                       <android.view.ViewGroup index="20" package="com.millennium.homenet" class="android.view.ViewGroup" text="" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[932,1078][1005,1121]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="21" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                         <android.widget.TextView index="0" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[932,1078][974,1121]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       </android.view.ViewGroup>
+[0-0]                                                       <android.widget.TextView index="21" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,1159][1038,1213]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="22" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.Button index="22" package="com.millennium.homenet" class="android.widget.Button" text="" content-desc="Unknown" resource-id="Unknown" checkable="false" checked="false" clickable="true" enabled="false" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,1266][1038,1392]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="23" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                         <android.widget.TextView index="0" package="com.millennium.homenet" class="android.widget.TextView" text="Sign Up" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[450,1292][630,1365]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       </android.widget.Button>
+[0-0]                                                       <android.widget.TextView index="23" package="com.millennium.homenet" class="android.widget.TextView" text="By signing up, you agree to our Terms &amp; Conditions&#10; and Privacy Policy." checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[89,1419][990,1508]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="24" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                       <android.widget.TextView index="24" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[42,1534][1038,1588]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="25" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                     </android.view.ViewGroup>
+[0-0]                                                   </android.widget.ScrollView>
+[0-0]                                                   <android.view.ViewGroup index="3" package="com.millennium.homenet" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,80][1080,185]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="5" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                     <android.widget.Button index="0" package="com.millennium.homenet" class="android.widget.Button" text="" content-desc="UNKNOWN" resource-id="UNKNOWN" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[21,80][104,183]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                       <android.widget.TextView index="0" package="com.millennium.homenet" class="android.widget.TextView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[55,117][70,145]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                     </android.widget.Button>
+[0-0]                                                     <android.view.ViewGroup index="1" package="com.millennium.homenet" class="android.view.ViewGroup" text="" content-desc="" checkable="false" checked="false" clickable="true" enabled="false" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[104,108][955,158]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                       <android.widget.TextView index="0" package="com.millennium.homenet" class="android.widget.TextView" text="Sign up as a" content-desc="Sign up txt" resource-id="welcome-signup-text" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[104,108][360,158]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                     </android.view.ViewGroup>
+[0-0]                                                   </android.view.ViewGroup>
+[0-0]                                                   <android.view.ViewGroup index="4" package="com.millennium.homenet" class="android.view.ViewGroup" text="" content-desc="Already have account? Login" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,2193][1080,2256]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="4" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]                                                     <android.widget.TextView index="0" package="com.millennium.homenet" class="android.widget.TextView" text="Already have account? Login" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[279,2193][801,2256]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]                                                   </android.view.ViewGroup>
+[0-0]                                                 </android.view.ViewGroup>
+[0-0]                                               </android.view.ViewGroup>
+[0-0]                                             </android.widget.ScrollView>
+[0-0]                                           </android.view.ViewGroup>
+[0-0]                                         </android.view.ViewGroup>
+[0-0]                                       </android.view.ViewGroup>
+[0-0]                                     </android.widget.FrameLayout>
+[0-0]                                   </android.view.ViewGroup>
+[0-0]                                 </android.view.ViewGroup>
+[0-0]                               </android.view.ViewGroup>
+[0-0]                             </android.view.ViewGroup>
+[0-0]                           </android.view.ViewGroup>
+[0-0]                         </android.view.ViewGroup>
+[0-0]                       </android.widget.ScrollView>
+[0-0]                     </android.view.ViewGroup>
+[0-0]                   </android.view.ViewGroup>
+[0-0]                 </android.view.ViewGroup>
+[0-0]               </android.view.ViewGroup>
+[0-0]             </android.widget.FrameLayout>
+[0-0]           </android.widget.FrameLayout>
+[0-0]         </android.widget.LinearLayout>
+[0-0]       </android.widget.FrameLayout>
+[0-0]     </android.widget.LinearLayout>
+[0-0]     <android.view.View index="1" package="com.millennium.homenet" class="android.view.View" text="" resource-id="android:id/navigationBarBackground" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,2361][1080,2400]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false" />
+[0-0]   </android.widget.FrameLayout>
+[0-0] </hierarchy>
+[0-0] Current Page Source:
+[0-0] <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+[0-0] <hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2281">
+[0-0]   <android.widget.FrameLayout index="0" package="com.millennium.homenet" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2400]" displayed="true" a11y-important="true" screen-reader-focusable="false" drawing-order="0" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]     <android.widget.LinearLayout index="0" package="com.millennium.homenet" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="1" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]       <android.widget.FrameLayout index="0" package="com.millennium.homenet" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2361]" displayed="true" a11y-important="false" screen-reader-focusable="false" drawing-order="2" showing-hint="false" text-entry-key="false" dismissable="false" a11y-focused="false" heading="false" live-region="0" context-clickable="false" content-invalid="false">
+[0-0]         <android.widget.LinearLayout index="0" package="com.millennium.homenet" class="android.widget.LinearLayout" text
+[0-0] 2025-11-28T12:18:12.933Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Select a Role*"]")
+[0-0] 2025-11-28T12:18:12.933Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:12.933Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[@text="Select a Role*"]'
+[0-0] }
+[0-0] 2025-11-28T12:18:13.251Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001b95',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001b95'
+[0-0] }
+[0-0] 2025-11-28T12:18:13.254Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff00001b95")
+[0-0] 2025-11-28T12:18:13.255Z INFO webdriver: [GET] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001b95/displayed
+[0-0] 2025-11-28T12:18:13.288Z INFO webdriver: RESULT true
+[0-0] 2025-11-28T12:18:13.288Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="Select a Role*"]")
+[0-0] 2025-11-28T12:18:13.289Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:13.289Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[@text="Select a Role*"]'
+[0-0] }
+[0-0] 2025-11-28T12:18:13.654Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001b95',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001b95'
+[0-0] }
+[0-0] 2025-11-28T12:18:13.658Z INFO webdriver: COMMAND elementClick("00000000-0000-006d-ffff-ffff00001b95")
+[0-0] 2025-11-28T12:18:13.658Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001b95/click
+[0-0] 2025-11-28T12:18:13.754Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:14.756Z INFO webdriver: COMMAND findElement("xpath", "(//android.widget.Button[@content-desc="Unknown"])[2]")
+[0-0] 2025-11-28T12:18:14.757Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:14.757Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//android.widget.Button[@content-desc="Unknown"])[2]'
+[0-0] }
+[0-0] 2025-11-28T12:18:15.223Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001bac',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001bac'
+[0-0] }
+[0-0] 2025-11-28T12:18:15.225Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff00001bac")
+[0-0] 2025-11-28T12:18:15.225Z INFO webdriver: [GET] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001bac/displayed
+[0-0] 2025-11-28T12:18:15.258Z INFO webdriver: RESULT true
+[0-0] 2025-11-28T12:18:15.258Z INFO webdriver: COMMAND elementClick("00000000-0000-006d-ffff-ffff00001bac")
+[0-0] 2025-11-28T12:18:15.258Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001bac/click
+[0-0] 2025-11-28T12:18:16.152Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:16.153Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@content-desc="Name"]")
+[0-0] 2025-11-28T12:18:16.153Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:16.153Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[@content-desc="Name"]'
+[0-0] }
+[0-0] 2025-11-28T12:18:16.464Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001b99',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001b99'
+[0-0] }
+[0-0] 2025-11-28T12:18:16.466Z INFO webdriver: COMMAND elementClear("00000000-0000-006d-ffff-ffff00001b99")
+[0-0] 2025-11-28T12:18:16.467Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001b99/clear
+[0-0] 2025-11-28T12:18:16.503Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:16.504Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-006d-ffff-ffff00001b99", "John QA Tester")
+[0-0] 2025-11-28T12:18:16.504Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001b99/value
+[0-0] 2025-11-28T12:18:16.504Z INFO webdriver: DATA { text: 'John QA Tester' }
+[0-0] 2025-11-28T12:18:17.565Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:17.565Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.Button[@content-desc="Email"]")
+[0-0] 2025-11-28T12:18:17.566Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:17.566Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.Button[@content-desc="Email"]'
+[0-0] }
+[0-0] 2025-11-28T12:18:18.375Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001b9c',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001b9c'
+[0-0] }
+[0-0] 2025-11-28T12:18:18.379Z INFO webdriver: COMMAND elementClear("00000000-0000-006d-ffff-ffff00001b9c")
+[0-0] 2025-11-28T12:18:18.379Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001b9c/clear
+[0-0] 2025-11-28T12:18:18.844Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:18.844Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-006d-ffff-ffff00001b9c", "qa.agent.test+3@gmail.com")
+[0-0] 2025-11-28T12:18:18.845Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001b9c/value
+[0-0] 2025-11-28T12:18:18.845Z INFO webdriver: DATA { text: 'qa.agent.test+3@gmail.com' }
+[0-0] 2025-11-28T12:18:19.899Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:19.900Z INFO webdriver: COMMAND findElement("xpath", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
+[0-0] 2025-11-28T12:18:19.900Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:19.900Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]'
+[0-0] }
+[0-0] 2025-11-28T12:18:20.652Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001ba5',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001ba5'
+[0-0] }
+[0-0] 2025-11-28T12:18:20.656Z INFO webdriver: COMMAND elementClear("00000000-0000-006d-ffff-ffff00001ba5")
+[0-0] 2025-11-28T12:18:20.656Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001ba5/clear
+[0-0] 2025-11-28T12:18:20.686Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:20.686Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-006d-ffff-ffff00001ba5", "03101234567")
+[0-0] 2025-11-28T12:18:20.686Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001ba5/value
+[0-0] 2025-11-28T12:18:20.686Z INFO webdriver: DATA { text: '03101234567' }
+[0-0] 2025-11-28T12:18:21.751Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:21.751Z INFO webdriver: COMMAND findElement("xpath", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
+[0-0] 2025-11-28T12:18:21.751Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:21.751Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]'
+[0-0] }
+[0-0] 2025-11-28T12:18:22.675Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001ba8',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001ba8'
+[0-0] }
+[0-0] 2025-11-28T12:18:22.678Z INFO webdriver: COMMAND elementClear("00000000-0000-006d-ffff-ffff00001ba8")
+[0-0] 2025-11-28T12:18:22.678Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001ba8/clear
+[0-0] 2025-11-28T12:18:22.719Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:22.719Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-006d-ffff-ffff00001ba8", "Test@1234")
+[0-0] 2025-11-28T12:18:22.719Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001ba8/value
+[0-0] 2025-11-28T12:18:22.719Z INFO webdriver: DATA { text: 'Test@1234' }
+[0-0] 2025-11-28T12:18:23.788Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:23.788Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.Button[@content-desc="Unknown"]/android.widget.TextView")
+[0-0] 2025-11-28T12:18:23.788Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:23.789Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.Button[@content-desc="Unknown"]/android.widget.TextView'
+[0-0] }
+[0-0] 2025-11-28T12:18:25.198Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00001bad',
+[0-0]   ELEMENT: '00000000-0000-006d-ffff-ffff00001bad'
+[0-0] }
+[0-0] 2025-11-28T12:18:25.201Z INFO webdriver: COMMAND elementClick("00000000-0000-006d-ffff-ffff00001bad")
+[0-0] 2025-11-28T12:18:25.201Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element/00000000-0000-006d-ffff-ffff00001bad/click
+[0-0] 2025-11-28T12:18:25.308Z INFO webdriver: RESULT null
+[0-0] 2025-11-28T12:18:25.308Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:25.308Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:25.308Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:25.671Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:25.676Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:25.676Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:25.676Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.267Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.272Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:26.272Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:26.272Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.439Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.443Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:26.443Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:26.443Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.612Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.616Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:26.616Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:26.616Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.808Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:26.813Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:26.813Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:26.813Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:27.155Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:27.159Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:27.159Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:27.159Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:27.983Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:27.987Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:27.987Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:27.987Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:29.093Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:29.097Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:29.098Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:29.098Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:29.390Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:29.393Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:29.393Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:29.393Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:29.719Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:29.723Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:29.723Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:29.723Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:30.078Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:30.081Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:30.082Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:30.082Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:30.418Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:30.422Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:30.422Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:30.422Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:30.748Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:30.751Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:30.751Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:30.751Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:31.035Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:31.037Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:31.037Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:31.037Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:31.314Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:31.317Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:31.318Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:31.318Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:31.637Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:31.642Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:31.642Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:31.642Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:32.018Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:32.020Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:32.020Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:32.020Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:32.426Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:32.429Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:32.429Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:32.429Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:32.745Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:32.749Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:32.749Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:32.749Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:33.081Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:33.084Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:33.084Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:33.085Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:33.464Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:33.468Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:33.468Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:33.468Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:33.812Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:33.816Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:33.817Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:33.817Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:34.136Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:34.140Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:34.140Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:34.140Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:34.475Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:34.479Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:34.479Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:34.479Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:34.772Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:34.774Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:34.774Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:34.774Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:35.150Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:35.154Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:35.154Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:35.154Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:35.554Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:35.557Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:35.557Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:35.558Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:35.827Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:35.832Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:35.832Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:35.832Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:36.158Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:36.161Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:36.161Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:36.161Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:36.518Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:36.522Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:36.522Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:36.522Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:36.831Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:36.834Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:36.835Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:36.835Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:37.183Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:37.187Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:37.187Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:37.187Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:37.531Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:37.536Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:37.536Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:37.536Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:37.941Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:37.944Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:37.944Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:37.944Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:38.257Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:38.261Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:38.262Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:38.262Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:38.545Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:38.548Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:38.548Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:38.549Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:38.835Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:38.838Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:38.839Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:38.839Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:39.156Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:39.159Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:39.159Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:39.159Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:39.419Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:39.423Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:39.423Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:39.423Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:39.767Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:39.771Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:39.771Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:39.771Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:40.065Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:40.068Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:40.069Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:40.069Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] 2025-11-28T12:18:40.373Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:40.377Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]")
+[0-0] 2025-11-28T12:18:40.377Z INFO webdriver: [POST] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0/element
+[0-0] 2025-11-28T12:18:40.377Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]'
+[0-0] }
+[0-0] Error in "ZIBA Property - Agent Role Sign-Up.Should sign up a new Agent successfully"
+Error: element ("//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]") still not displayed after 15000ms
+    at async Context.<anonymous> (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/test/specs/test.registerAgent.js:123:9)
+[0-0] 2025-11-28T12:18:40.830Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/node_modules/appium-uiautomator2-driver/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-11-28T12:18:40.836Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2025-11-28T12:18:40.836Z INFO webdriver: [DELETE] http://127.0.0.1:59062/session/17784857-abdd-4382-b5ec-c73074af71f0
+[0-0] 2025-11-28T12:18:41.493Z INFO webdriver: RESULT null
+[0-0] FAILED in Android(13) on Android - file:///test/specs/test.registerAgent.js
+2025-11-28T12:18:41.627Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[Android #0-0] Running: on Android
+[Android #0-0] Session ID: 17784857-abdd-4382-b5ec-c73074af71f0
+[Android #0-0]
+[Android #0-0] » test/specs/test.registerAgent.js
+[Android #0-0] ZIBA Property - Agent Role Sign-Up
+[Android #0-0]    ✖ Should sign up a new Agent successfully
+[Android #0-0]
+[Android #0-0] 1 failing (43.3s)
+[Android #0-0]
+[Android #0-0] 1) ZIBA Property - Agent Role Sign-Up Should sign up a new Agent successfully
+[Android #0-0] element ("//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]") still not displayed after 15000ms
+[Android #0-0] Error: element ("//android.widget.TextView[contains(@text, "Complete Registration") or contains(@text, "Success") or contains(@text, "Verify")]") still not displayed after 15000ms
+[Android #0-0]     at async Context.<anonymous> (/Users/AR/Ziba_Auto-testing/ZibaProperty_Automation/test/specs/test.registerAgent.js:123:9)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:55  
+
+2025-11-28T12:18:41.629Z INFO @wdio/local-runner: Shutting down spawned worker
+2025-11-28T12:18:41.880Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2025-11-28T12:18:41.880Z INFO @wdio/local-runner: shutting down
+2025-11-28T12:18:41.880Z INFO @wdio/cli:launcher: Run onComplete hook
+2025-11-28T12:18:41.881Z INFO @wdio/appium-service: Killing entire Appium tree
+2025-11-28T12:18:41.977Z INFO @wdio/appium-service: Process and its children successfully terminated

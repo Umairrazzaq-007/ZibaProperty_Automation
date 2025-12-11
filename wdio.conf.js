@@ -57,10 +57,10 @@ exports.config = {
       // 
       platformName: "Android",
       "appium:platformVersion": "13",
-      "appium:deviceName": "vivo Y33s",
+      "appium:deviceName": "Samsung A32",
       "appium:appPackage": "com.millennium.homenet",
       "appium:appActivity": ".MainActivity",
-      "appium:appWaitActivity": "com.millennium.homenet.MainActivity,.MainActivity",
+      "appium:appWaitActivity": "com.millennium.homenet.MainActivity",
       "appium:appWaitForLaunch": true,
       "appium:appWaitDuration": 20000,
       "appium:automationName": "UiAutomator2",
@@ -70,19 +70,19 @@ exports.config = {
       "appium:autoGrantPermissions": true,
       "appium:ignoreHiddenApiPolicyError": true,
       "appium:dontStopAppOnReset": true,
-  
+      "appium:uiautomator2ServerInstallTimeout": 60000,
     },
-//     {
-//   "platformName": "Android",
-//   "appium:platformVersion": "13",
-//   "appium:deviceName": "vivo Y33s",
-//   "appium:automationName": "UiAutomator2",
-//   "appium:appPackage": "com.millennium.homenet",
-//   "appium:appActivity": "com.millennium.homenet.MainActivity",
-//   "appium:noReset": true,
-//   "appium:autoGrantPermissions": true,
-//   "appium:ignoreHiddenApiPolicyError": true
-// },
+    //     {
+    //   "platformName": "Android",
+    //   "appium:platformVersion": "13",
+    //   "appium:deviceName": "vivo Y33s",
+    //   "appium:automationName": "UiAutomator2",
+    //   "appium:appPackage": "com.millennium.homenet",
+    //   "appium:appActivity": "com.millennium.homenet.MainActivity",
+    //   "appium:noReset": true,
+    //   "appium:autoGrantPermissions": true,
+    //   "appium:ignoreHiddenApiPolicyError": true
+    // },
   ],
 
   //
